@@ -1,0 +1,11 @@
+import sys
+import random
+
+numbers = [1,2,1,110,9]
+
+unique_list = []
+for num in numbers:
+    if num not in unique_list:
+        unique_list.append(num)
+
+print("unique list "+ str(unique_list))
