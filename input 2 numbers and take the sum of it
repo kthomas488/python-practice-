@@ -1,0 +1,19 @@
+import sys
+ num1 = sys.argv[1]
+ num2 = sys.argv[2]
+
+ print("the first number is " + " " + num1 + "the second number is " + " " + num2)
+ print("Taking the sum of the two numbers")
+ sum = int(num1) + int(num2)
+ print("The sum of the two numbers are" + " " +str(sum))
+
+ #### you can also do it this way
+ num1 = input("The first number is :")
+ num2 = input("The second number is :")
+
+ print("The first number is " + " " + num1 + "the second number is " + " " +num2)
+ print("Taking the sum of the first and second number")
+ sum = int(num1) + int(num2)
+ print("The sum of the 2 numbers is " + " " + str(sum))
+
+ 
