@@ -1,0 +1,16 @@
+import sys
+
+sentence = input("Enter the string:")
+
+"""print("the string is" +" " +sentence)
+
+reversed_string = sentence[::-1]
+
+print("The reversed string is:" +" " + reversed_string)"""
+
+### Another method to do. This prepends as it iterates through the loop
+reversed_string = " "
+for char in sentence:
+    reversed_string = char + reversed_string
+
+print("The reversed string is:" + reversed_string)
