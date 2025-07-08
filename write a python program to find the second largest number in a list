@@ -1,0 +1,16 @@
+import sys
+import random
+list = [12,45,7,89,70]
+
+largest_num = list[0]
+
+for num in list:
+    if int(largest_num) < int(num):
+        largest_num = num
+second_largest = list[1]
+for num in list:
+    if (num < largest_num) and (num > second_largest):
+        second_largest = num
+
+print("The largest number is" +" " + str(largest_num))
+print("The second largest number is " + " " + str(second_largest))
