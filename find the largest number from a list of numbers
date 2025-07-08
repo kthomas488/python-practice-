@@ -1,0 +1,11 @@
+import sys
+import random
+list = [12,45,7,89,70]
+
+largest_num = list[0]
+
+for num in list:
+    if int(largest_num) < int(num):
+        largest_num = num
+
+print("The largest number is" +" " + str(largest_num)
