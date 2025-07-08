@@ -1,0 +1,20 @@
+import sys
+
+num1 = input("Enter the number")
+
+print("The number entered is " + num1)
+
+if ( int (num1) % 2 == 0):
+    print("The entered number is even")
+else:
+    print("The entered number is odd")
+
+### Another method to take the inputs using for loop
+range_number = input("Enter the range:")
+print("Entering the for loop")
+
+for num in range(0,int(range_number)):
+    if( int(num) % 2 == 0) :
+        print("The number is even" + " " + "and the number is " + str(num))
+    else:
+        print("The number is odd"+ " " + "and the number is " + str(num))
