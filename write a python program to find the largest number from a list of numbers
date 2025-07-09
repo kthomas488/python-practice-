@@ -1,0 +1,18 @@
+import sys
+import random
+
+##numbers = [3,10,1,100,10]
+numbers = []
+for _ in range(0,10):
+    num = random.randint(0,100)
+    numbers.append(num)
+
+print("List of numbers:" + " " + str(numbers))
+largest = numbers[0]
+
+for i in range(0,len(numbers)):
+    for j in range(0,len(numbers)-1):
+        if numbers[i] < numbers[j]:
+            largest = numbers[j]
+
+print("Largest numbers is " + "  " + str(largest))
