@@ -1,0 +1,15 @@
+import sys
+import random
+
+##numbers = [1,2,1,110,9]
+
+
+numbers = [1,2,10,20,55]
+start = 0
+end = len(numbers)-1
+while start < end:
+    numbers[start],numbers[end] = numbers[end],numbers[start]
+    start = start + 1
+    end = end -1
+
+print("Reversed list is:" + " " + str(numbers))
