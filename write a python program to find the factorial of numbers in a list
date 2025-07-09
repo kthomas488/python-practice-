@@ -1,0 +1,17 @@
+import sys
+import random
+
+##number = int(input("Enter the number that you want to find the factorial of"))
+numbers = []
+for _ in range(0,10):
+    num = random.randint(0,10)
+    numbers.append(num)
+##init = 1
+
+print("list of numbers is " + " " + str(numbers))
+for i in range(0,len(numbers)):
+    num = int(numbers[i])
+    fact = 1
+    for j in range(1,num+1):
+        fact = fact * j
+    print("Factorial of " +str(num) + "is " + str(fact))
