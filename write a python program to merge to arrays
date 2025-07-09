@@ -1,0 +1,47 @@
+import sys
+import random
+
+##numbers = [1,2,1,110,9]
+
+
+numbers = [1,2,10,20,55]
+numbers2 = [100,150,10,11]
+
+
+
+for i in range(0,len(numbers)):
+    for j in range(0,len(numbers)-i-1):
+        if(numbers[j]>numbers[j+1]):
+            numbers[j],numbers[j+1]=numbers[j+1],numbers[j]
+
+for i in range(0,len(numbers2)):
+    for j in range(0,len(numbers2)-i-1):
+        if(numbers2[j]> numbers2[j+1]):
+            numbers2[j],numbers2[j+1]=numbers2[j+1],numbers2[j]
+merged = []
+print("after sorting")
+i = j = 0
+
+while (i<len(numbers) and j<len(numbers2)):
+    if (numbers[i] < numbers2[j]):
+        merged.append(numbers[i])
+        i = i+1
+    elif(numbers2[j]<numbers[i]):
+        merged.append(numbers2[j])
+        j = j+1
+    else:
+        # Both are equal — add one and advance both
+        merged.append(numbers[i])
+        i += 1
+        j += 1
+
+while(i < len(numbers)):
+    merged.append(numbers[i])
+    i = i+1
+
+while(j< len(numbers2)):
+    merged.append(numbers2[j])
+    j = j+1
+
+print("Merged arrays: "+ str(merged))
+
