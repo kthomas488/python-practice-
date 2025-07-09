@@ -1,0 +1,18 @@
+import sys
+import random
+
+##numbers = [1,2,1,110,9]
+
+
+count = int(input("Enter the count of random numbers to be generated"))
+numbers = []
+for _ in range(0,count):
+    num = random.randint(0,100)
+    numbers.append(num)
+print("The inital list is " + str(numbers))
+for i in range(0,len(numbers)):
+    for j in range(0,len(numbers)-i-1):
+        if numbers[j] < numbers[j+1]:
+            numbers[j],numbers[j+1] = numbers[j+1],numbers[j]
+    print("New list "+ str(numbers))
+print("The sorted list is " + str(numbers))
