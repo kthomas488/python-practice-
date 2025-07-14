@@ -1,0 +1,8 @@
+import sys
+import random
+
+dict1 = {'a': 1, 'b': 2}
+dict2 = {'b': 20, 'c': 3}
+
+dict1.update(dict2)  # dict1 is now modified
+print("Merged dictionary:", dict1)
