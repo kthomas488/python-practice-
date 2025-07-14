@@ -1,0 +1,24 @@
+import sys
+import random
+
+
+
+start = random.randint(0,100)
+
+full_list = [start + i for i in range(5)]
+
+missing_number = random.choice(full_list)
+
+incomplete_list = full_list.copy()
+incomplete_list.remove(missing_number)
+
+print("Full list:"+ " " + str(full_list))
+print("incomplete list:"+ " " + str(incomplete_list))
+
+random.shuffle(incomplete_list)
+
+expected_sum = sum(full_list)
+actual_sum = sum(incomplete_list)
+found_missing = expected_sum - actual_sum
+
+print("The missing number is :" + " " + str(found_missing))
