@@ -1,0 +1,13 @@
+import sys
+import random
+
+text = input("Enter the string")
+
+seen = set()
+result = ""
+for char in text:
+    if char not in seen:
+        seen.add(char)
+        result += char
+
+print("String after removing the duplicates:" + result)
